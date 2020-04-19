@@ -9,6 +9,8 @@ public class Field : WorldThing
 
     public List<PlantRecipe> recipes;
 
+    public FieldSpawner FieldSpawner;
+    
     private void Start()
     {
         pullTab.pullable = false;
@@ -32,10 +34,19 @@ public class Field : WorldThing
             if (requiredIngredientsRemaining <= 0)
             {
                 Debug.Log(recipe.result);
+                
                 ResourcesAbsorbed.Clear();
                 ResourcesAbsorbed.TrimExcess();
-                StartCoroutine(pullTab.Expose());
+                StartCoroutine(ExposeAndActivate(recipe));
+                return;
             }
         }
+    }
+
+    IEnumerator ExposeAndActivate( PlantRecipe recipe )
+    {
+        yield return StartCoroutine(pullTab.Expose() );
+        FieldSpawner.plantToSpawn = recipe.plantPrefab;
+
     }
 }

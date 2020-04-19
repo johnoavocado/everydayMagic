@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredients: 050000000800000000000000
   result: ClassicCabbage
+  plantPrefab: {fileID: 4657324287307769958, guid: c7c5c7145ebd74946a817d4b4f3ff99c,
+    type: 3}

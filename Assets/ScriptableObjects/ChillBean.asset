@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredients: 00000000060000000400000008000000
   result: ChillBean
+  plantPrefab: {fileID: 4657324287307769958, guid: d8409700c8aeb49c187dcba7ea9aa0b3,
+    type: 3}

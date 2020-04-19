@@ -22,10 +22,10 @@ MonoBehaviour:
     y: 30
     width: 1792
     height: 1025
-  m_MinSize: {x: 1112, y: 492}
-  m_MaxSize: {x: 26007, y: 14042}
+  m_MinSize: {x: 1113, y: 342}
+  m_MaxSize: {x: 26008, y: 10021}
   vertical: 0
-  controlID: 67899
+  controlID: 76156
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -84,7 +84,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -136,10 +136,10 @@ MonoBehaviour:
     y: 0
     width: 901
     height: 1025
-  m_MinSize: {x: 605, y: 492}
-  m_MaxSize: {x: 12005, y: 14042}
+  m_MinSize: {x: 605, y: 342}
+  m_MaxSize: {x: 12005, y: 8042}
   vertical: 1
-  controlID: 67900
+  controlID: 76157
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 67901
+  controlID: 76158
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -221,9 +221,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 002effff
-      m_LastClickedID: -53760
-      m_ExpandedIDs: c606ffff302cffff582cffff18a2ffff1ea5ffffe4faffff6afbffff
+      m_SelectedIDs: 9a870000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 44e9feff302cffff582cffffa451ffff18a2ffff1ea5ffffe8f9ffffd0faffffe4faffff6afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -310,9 +310,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -3.2, y: -0.73, z: 2}
+    m_Target: {x: 2.7527492, y: -0.31962353, z: 0.54947925}
     speed: 2
-    m_Value: {x: -3.2, y: -0.73, z: 2}
+    m_Value: {x: 2.7527492, y: -0.31962353, z: 0.54947925}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -362,9 +362,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 8.619573
+    m_Target: 3.6898203
     speed: 2
-    m_Value: 8.619573
+    m_Value: 3.6898203
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -451,7 +451,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -460,14 +460,14 @@ MonoBehaviour:
     y: 736
     width: 901
     height: 289
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 12}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 12}
   - {fileID: 13}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -507,20 +507,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Prefabs/Plants
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Prefabs/Plants
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /Users/johnodonnell/WORK/EverydayMagic
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 22340000
-    m_LastClickedID: 13346
-    m_ExpandedIDs: 000000001c34000000ca9a3b
+    scrollPos: {x: 0, y: 12}
+    m_SelectedIDs: f2b70000
+    m_LastClickedID: 47090
+    m_ExpandedIDs: 000000001c3400002234000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -548,7 +548,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001c34000000ca9a3b
+    m_ExpandedIDs: 000000001c3400002234000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -573,8 +573,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 002effff
-    m_LastClickedInstanceID: -53760
+    m_SelectedInstanceIDs: 9a870000
+    m_LastClickedInstanceID: 34714
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300007e80000000000000
     m_RenameOverlay:
@@ -592,7 +592,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 11}
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -695,20 +695,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/ScriptableObjects
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/ScriptableObjects
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /Users/johnodonnell/WORK/EverydayMagic
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 22340000
-    m_LastClickedID: 13346
-    m_ExpandedIDs: 000000001c34000000ca9a3b
+    m_SelectedIDs: 26340000
+    m_LastClickedID: 13350
+    m_ExpandedIDs: 000000001c3400002234000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -736,7 +736,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001c34000000ca9a3b
+    m_ExpandedIDs: 000000001c3400002234000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -761,9 +761,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 002effff
-    m_LastClickedInstanceID: -53760
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 9a870000
+    m_LastClickedInstanceID: 34714
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

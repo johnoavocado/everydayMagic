@@ -35,11 +35,13 @@ public class CharacterController : MonoBehaviour
     public KeyCode rightButton;
     public KeyCode activateButton;
 
-    public List<Wall> walls;
-    
+    private AudioSource _as;
+    public AudioClip equipSound;
+
     private void Start()
     {
         worldThingInfocus = worldNothing;
+        _as = this.GetComponent<AudioSource>();
     }
 
     void Update()
@@ -77,10 +79,17 @@ public class CharacterController : MonoBehaviour
     {
         if (AvailableItems.Count == 0)
         {
-            PutDownItem();
+            if (PutDownItem())
+            {
+                _as.clip = equipSound;
+                _as.Play();
+            }
             return;
         }
 
+        _as.clip = equipSound;
+        _as.Play();
+        
         PutDownItem();
         EquippedItem = AvailableItems[0];
         AvailableItems.Remove(AvailableItems[0]);
@@ -92,7 +101,7 @@ public class CharacterController : MonoBehaviour
         Debug.Log(EquippedItem.gameObject.name);
     }
 
-    void PutDownItem()
+    private bool PutDownItem()
     {
         if (EquippedItem != null)
         {
@@ -100,13 +109,22 @@ public class CharacterController : MonoBehaviour
             EquippedItem.PutDown(putDownZone.transform.position);
             EquippedItem.transform.parent = null;
             EquippedItem = null;
+            return true;
         }
+
+        return false;
     }
 
     void ActivateItem()
     {
         if (EquippedItem)
         {
+            if (EquippedItem.CanActivateWith(worldThingInfocus))
+            {
+                _as.clip = EquippedItem.ActivateSound;
+                _as.Play();
+            }
+            
             if (EquippedItem.Activate(worldThingInfocus) == true)
             {
                 Destroy(EquippedItem.gameObject);

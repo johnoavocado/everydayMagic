@@ -6,5 +6,5 @@ public class PlantRecipe : ScriptableObject
 {
     public List<WorldThing.Resource> ingredients;
     public string result;
-    
+    public GameObject plantPrefab;
 }

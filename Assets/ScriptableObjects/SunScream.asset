@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredients: 080000000900000005000000
   result: SunScream
+  plantPrefab: {fileID: 4657324287307769958, guid: d33e6cc1630a64f47915c3e0a476f4fa,
+    type: 3}

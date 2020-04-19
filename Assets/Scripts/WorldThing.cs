@@ -31,7 +31,9 @@ public class WorldThing : MonoBehaviour
         Seeds,
         Fire,
         Money,
-        Bubbles
+        Bubbles,
+        Plant,
+        Nothing
     }
 
     public List<Resource> ResourcesAbsorbed;

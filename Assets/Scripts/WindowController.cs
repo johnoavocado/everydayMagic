@@ -5,11 +5,16 @@ using UnityEngine;
 
 public class WindowController : MonoBehaviour
 {
+    public List<Effector> Effectors;
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.GetComponent<Effector>() != null)
         {
-            other.GetComponent<Effector>().Activate();
+            if (Effectors.Contains(other.GetComponent<Effector>()))
+            {
+                other.GetComponent<Effector>().Activate();
+            }
         }
     }
 
@@ -17,7 +22,10 @@ public class WindowController : MonoBehaviour
     {
         if (other.GetComponent<Effector>() != null)
         {
-            other.GetComponent<Effector>().Activate();
+            if (Effectors.Contains(other.GetComponent<Effector>()))
+            {
+                other.GetComponent<Effector>().Activate();
+            }
         }
     }
 
@@ -25,7 +33,10 @@ public class WindowController : MonoBehaviour
     {
         if (other.GetComponent<Effector>() != null)
         {
-            other.GetComponent<Effector>().Deactivate();
+            if (Effectors.Contains(other.GetComponent<Effector>()))
+            {
+                other.GetComponent<Effector>().Deactivate();
+            }
         }
     }
 }

@@ -8,7 +8,7 @@ public class Effector : MonoBehaviour
 
     public WorldThing.Resource effect;
     
-    public void Activate()
+    public virtual void Activate()
     {
         foreach (var affectee in affected)
         {
@@ -16,7 +16,7 @@ public class Effector : MonoBehaviour
         }
     }
 
-    public void Deactivate()
+    public virtual void Deactivate()
     {
         foreach (var affectee in affected)
         {

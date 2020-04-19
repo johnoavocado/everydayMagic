@@ -68,9 +68,11 @@
      <Compile Include="Assets\Scripts\CharacterController.cs" />
      <Compile Include="Assets\Scripts\Effector.cs" />
      <Compile Include="Assets\Scripts\Field.cs" />
+     <Compile Include="Assets\Scripts\FieldSpawner.cs" />
      <Compile Include="Assets\Scripts\Grabber.cs" />
      <Compile Include="Assets\Scripts\IC_Lute.cs" />
      <Compile Include="Assets\Scripts\IC_Money.cs" />
+     <Compile Include="Assets\Scripts\IC_Plant.cs" />
      <Compile Include="Assets\Scripts\IC_Seeds.cs" />
      <Compile Include="Assets\Scripts\IC_WateringCan.cs" />
      <Compile Include="Assets\Scripts\ItemController.cs" />

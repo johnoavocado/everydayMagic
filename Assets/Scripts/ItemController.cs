@@ -9,6 +9,8 @@ public class ItemController : MonoBehaviour
 
     public List<WorldThing.Type> Safe_WT_Types;
     
+    public AudioClip ActivateSound;
+    
     public virtual void Start()
     {
         putdownposition = transform.position;

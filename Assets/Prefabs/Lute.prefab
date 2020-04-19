@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Safe_WT_Types: 
+  ActivateSound: {fileID: 8300000, guid: 06dd49b907e7b42928229d69cf476d13, type: 3}
 --- !u!212 &4862855407283523792
 SpriteRenderer:
   m_ObjectHideFlags: 0
