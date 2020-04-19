@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0acf53e40c3d4193a5a9b5147bcd798, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Safe_WT_Types: 
+  Safe_WT_Types: 05000000
   ActivateSound: {fileID: 8300000, guid: 7a4e60d93484341108c1fcf4ab851164, type: 3}
 --- !u!212 &4862855407283523792
 SpriteRenderer:

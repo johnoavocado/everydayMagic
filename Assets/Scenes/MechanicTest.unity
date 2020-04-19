@@ -529,6 +529,7 @@ GameObject:
   - component: {fileID: 318973173}
   - component: {fileID: 318973174}
   - component: {fileID: 318973175}
+  - component: {fileID: 318973176}
   m_Layer: 0
   m_Name: TE_Seller
   m_TagString: Untagged
@@ -544,7 +545,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318973172}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.79, z: 0}
+  m_LocalPosition: {x: 0, y: -0.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1076015000}
@@ -595,6 +596,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &318973176
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318973172}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &351154000
 GameObject:
   m_ObjectHideFlags: 0
@@ -992,6 +1014,7 @@ GameObject:
   - component: {fileID: 421448253}
   - component: {fileID: 421448254}
   - component: {fileID: 421448255}
+  - component: {fileID: 421448256}
   m_Layer: 0
   m_Name: TE_Buyer
   m_TagString: Untagged
@@ -1054,6 +1077,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &421448256
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421448252}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &538816374
 GameObject:
   m_ObjectHideFlags: 0
@@ -2484,7 +2528,7 @@ PrefabInstance:
     - target: {fileID: 3254297396238525386, guid: 3160fa5a286c6467da64b09ab6618da2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.01
+      value: -1.49
       objectReference: {fileID: 0}
     - target: {fileID: 3702806591098503084, guid: 3160fa5a286c6467da64b09ab6618da2,
         type: 3}
@@ -2514,12 +2558,12 @@ PrefabInstance:
     - target: {fileID: 6508026710072164073, guid: 3160fa5a286c6467da64b09ab6618da2,
         type: 3}
       propertyPath: minX
-      value: -3.02
+      value: -3.11
       objectReference: {fileID: 0}
     - target: {fileID: 6508026710072164073, guid: 3160fa5a286c6467da64b09ab6618da2,
         type: 3}
       propertyPath: maxX
-      value: -1.66
+      value: -0.74
       objectReference: {fileID: 0}
     - target: {fileID: 7278391570607035095, guid: 3160fa5a286c6467da64b09ab6618da2,
         type: 3}
@@ -2534,7 +2578,7 @@ PrefabInstance:
     - target: {fileID: 7603470627618113523, guid: 3160fa5a286c6467da64b09ab6618da2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.67
+      value: -0.81
       objectReference: {fileID: 0}
     - target: {fileID: 7603470627618113523, guid: 3160fa5a286c6467da64b09ab6618da2,
         type: 3}
@@ -2594,7 +2638,7 @@ PrefabInstance:
     - target: {fileID: 8096494185576215479, guid: 3160fa5a286c6467da64b09ab6618da2,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8096494185576215479, guid: 3160fa5a286c6467da64b09ab6618da2,
         type: 3}
@@ -3020,7 +3064,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1482094447}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.79, y: -1.01, z: -1}
+  m_LocalPosition: {x: 0.38, y: -0.59, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 811735391}
@@ -3075,7 +3119,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 7
 --- !u!82 &1482094452
 AudioSource:

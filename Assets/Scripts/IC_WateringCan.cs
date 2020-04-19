@@ -9,9 +9,6 @@ public class IC_WateringCan : ItemController
     public override void Start()
     {
         base.Start();
-        Safe_WT_Types.Add(WorldThing.Type.Field);
-        Safe_WT_Types.Add(WorldThing.Type.Fire);
-        Safe_WT_Types.Add(WorldThing.Type.River);
     }
     
     public override bool Activate(WorldThing worldThing)

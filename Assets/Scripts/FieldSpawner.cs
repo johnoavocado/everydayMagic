@@ -22,6 +22,7 @@ public class FieldSpawner : Effector
         go.transform.DOMove(spawnZone1.transform.position, 0.5f);
 
         audioSource.clip = GrowClips[Random.Range(0, GrowClips.Count-1)];
+        audioSource.Play();
 
         plantToSpawn = null;
     }

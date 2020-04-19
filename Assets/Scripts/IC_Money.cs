@@ -7,7 +7,6 @@ public class IC_Money : ItemController
     public override void Start()
     {
         base.Start();
-        Safe_WT_Types.Add(WorldThing.Type.Seller);
     }
 
     public override bool Activate(WorldThing worldThing)

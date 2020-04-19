@@ -7,8 +7,6 @@ public class IC_Plant : ItemController
     public override void Start()
     {
         base.Start();
-        
-        Safe_WT_Types.Add(WorldThing.Type.Seller);
     }
     
     public override bool Activate(WorldThing worldThing)
@@ -17,7 +15,7 @@ public class IC_Plant : ItemController
         {
             switch (worldThing.type)
             {
-                case WorldThing.Type.Seller:
+                case WorldThing.Type.Buyer:
                     worldThing.Absorb(WorldThing.Resource.Plant);
                     return true;
                 default:

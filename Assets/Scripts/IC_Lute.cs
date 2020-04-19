@@ -7,8 +7,6 @@ public class IC_Lute : ItemController
     public override void Start()
     {
         base.Start();
-        
-        Safe_WT_Types.Add(WorldThing.Type.Field);
     }
     
     public override bool Activate(WorldThing worldThing)
